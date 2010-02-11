@@ -13,10 +13,21 @@ AboutAsserts enlightened? = method(
 
   ;; To understand reality, we must compare our expectations against
   ;; reality.
-  __ = "Fill me in"
   expected_value = __
   actual_value = 1 + 1
   assert(expected_value == actual_value)
+
+  assert_equal = method(expected, actual,
+    assert(expected == actual)
+    if(expected == actual,
+      ,
+      "Expected '#{expected}' to equal '#{actual}'" println
+      )
+    )
+  ;; Some ways of asserting equality are better than others.
+  expected_value = __
+  actual_value = 1 + 1
+  assert_equal(expected_value, actual_value)
 )
 
 f = AboutAsserts mimic
