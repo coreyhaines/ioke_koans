@@ -1,8 +1,10 @@
 meditations = dmacro(
-  [>arg1]
-  arg1 println
+  [+>args]
+  args[0] println
+  args[1] println
 )
 
 meditations(
-  "hello"
+  "hello",
+  "world"
 )
