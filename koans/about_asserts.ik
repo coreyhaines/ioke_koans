@@ -9,6 +9,14 @@ AboutAsserts enlightened? = method(
   ;; Enlightement may be more easily achieved with appropriate
   ;; messages.
   assert(false, "This should be true -- please fix this")
+
+
+  ;; To understand reality, we must compare our expectations against
+  ;; reality.
+  __ = "Fill me in"
+  expected_value = __
+  actual_value = 1 + 1
+  assert(expected_value == actual_value)
 )
 
 f = AboutAsserts mimic

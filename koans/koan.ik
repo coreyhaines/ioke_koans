@@ -5,3 +5,5 @@ Koan assert = method(arg, msg "",
     "You have not been enlightened #{msg}" println
     )
 )
+
+Koan __ = "Fill me in"
