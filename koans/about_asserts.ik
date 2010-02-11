@@ -13,14 +13,16 @@ AboutAsserts enlightened? = method(
 
   ;; To understand reality, we must compare our expectations against
   ;; reality.
-  expected_value = __
-  actual_value = 1 + 1
-  assert(expected_value == actual_value)
+  let(expected_value, __,
+    actual_value, 1 + 1,
+    assert(expected_value == actual_value)
+  )
 
   ;; Some ways of asserting equality are better than others.
-  expected_value = __
-  actual_value = 1 + 1
-  assert_equal(expected_value, actual_value)
+  let(expected_value, __,
+    actual_value, 1 + 1,
+    assert_equal(expected_value, actual_value)
+  )
 
   ;; Sometimes we will ask you to fill in the values
   assert_equal(__, 1 + 1)
