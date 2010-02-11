@@ -21,6 +21,9 @@ AboutAsserts enlightened? = method(
   expected_value = __
   actual_value = 1 + 1
   assert_equal(expected_value, actual_value)
+
+  ;; Sometimes we will ask you to fill in the values
+  assert_equal(__, 1 + 1)
 )
 
 f = AboutAsserts mimic

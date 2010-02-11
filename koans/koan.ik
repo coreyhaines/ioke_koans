@@ -10,7 +10,7 @@ Koan assert = method(arg, msg "",
 Koan assert_equal = method(expected, actual,
   assert(expected == actual)
   unless(expected == actual,
-    "Expected '#{expected}' to equal '#{actual}'" println
+    "'#{expected}' expected, but was '#{actual}'" println
   )
 )
 
