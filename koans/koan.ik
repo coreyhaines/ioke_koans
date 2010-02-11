@@ -1,7 +1,7 @@
 Koan = Origin mimic
-Koan assert = method(arg,
+Koan assert = method(arg, msg "",
   if(arg,
     "You have been enlightened" println,
-    "You have not been enlightened" println
+    "You have not been enlightened #{msg}" println
     )
 )
