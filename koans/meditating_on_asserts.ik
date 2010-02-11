@@ -1,10 +1,11 @@
-meditations = dmacro(
-  [+>args]
-  args[0] println
-  args[1] println
+meditations = macro(
+  
 )
 
 meditations(
-  "hello",
-  "world"
+  "asserting",
+  assert(false),
+
+  "asserting equality",
+  assert_equal(__, 1+1)
 )
