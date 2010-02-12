@@ -1,3 +1,4 @@
+use("koan")
 meditations = macro(
   args = call arguments
   len = args length
@@ -7,11 +8,9 @@ meditations = macro(
   description println
 
   code = args[1]
-  assert = method(arg, 
-    "#{arg} here" println
-    "hello"
-  )
-  code println
+  code formattedCode println
+  code arguments println
+  code sendTo(Koan mimic)
 )
 
 meditations(
@@ -21,3 +20,4 @@ meditations(
   "asserting equality",
   assert_equal(__, 1+1)
 )
+
