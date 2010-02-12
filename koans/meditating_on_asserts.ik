@@ -8,11 +8,10 @@ meditations = macro(
   description println
 
   code = args[1]
-  code formattedCode println
-  code arguments println
   code sendTo(Koan mimic)
 )
 
+"meditations with macro" println
 meditations(
   "asserting",
   assert(false),
@@ -21,3 +20,15 @@ meditations(
   assert_equal(__, 1+1)
 )
 
+meditations2 = dmacro(
+  [+args]
+  args[0] println
+  code = args[1]
+  code sendTo(Koan mimic)
+)
+
+"meditations2 with dmacro" println
+meditations2(
+  "asserting",
+  assert(false)
+)
